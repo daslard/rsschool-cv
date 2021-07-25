@@ -1,0 +1,124 @@
+body {
+    display: block;
+    margin: 6px;
+}
+
+p {
+    font-size: 23px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+li {
+    font-size: 23px;
+}
+
+.header {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: rgba(152, 152, 152, .5);
+}
+
+.header_info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+.header-name {
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(0, 0, 0);    
+}
+
+.header-description {
+    font-size: 20px;
+    color: rgba(0, 0, 0, .5)
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 10px 0;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 23px;
+}
+
+.fun-animated {
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 10s ease infinite;
+    animation: rainbow 10s ease infinite;
+    font-size: 42px;
+    line-height: 25px;
+  }
+   
+  @-webkit-keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+   
+  @keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+
+  .about_image-wrapper {
+      display: flex;
+      align-self: center;
+  }
+
+  .footer {
+      display: block;
+      max-width: 1024px;
+      margin: 0 auto;
+    border-top: 2px solid rgba(0, 0, 0, .14);
+  }
+
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 16px 0;
+    padding-left: 0;
+  }
+
+  .footer-list_item {
+	padding: 0 40px;
+}
+
+  .github-svg {
+       height: 50px;
+  }
+
+  .rs-svg {
+    height: 76px;
+    align-self: center;
+  }
+
+  .footer-list_item_year {
+    text-align: right;
+    width: 100%;
+    align-self: flex-end;
+}
